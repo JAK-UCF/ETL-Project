@@ -17,7 +17,7 @@ CSV:
 * Groupby video_id, pull most recent date for each video and assign that value to a new 'MaxDate' column.
 * Pull only the most recent 'trending_date' for each video_id into a new df.
 * Filled empty ‘descriptions’ in the dataset with "No description provided." to fill all NaN values in that series.
-* Filled NaN in 'category_name' where 'category_id' was 29 with the proper category name. This only filled for US and left 55 NaN values between CA and GB.
+* Filled NaN in 'category_name' where 'category_id' was 29 with the proper category name. The standard df merge only filled for US and left 55 NaN values between CA and GB which we filled in this numpy array pull and replace method...
 * Changed format for date in ‘publish_time’ to match ‘trending_date’.
 * Dropped ‘thumbnail_link', ‘ratings_disabled', 'video_error_or_removed', 'publish_time', 'MaxDate' from final table before push.
 * Reorganize columns to 'video_id', 'title'video_id', 'title', 'channel_title', 'views', 'likes', 'dislikes',                         'comments_disabled', 'comment_count', 'description', 'tags', 'category_id', 'category_name', 'publish_date', 'trending_date', 'country'.
