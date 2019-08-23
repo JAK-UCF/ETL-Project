@@ -10,6 +10,7 @@ JSON:
 * Drop static YouTube info not needed for video database ('etag', 'kind', 'snippet.assignable', 'snippet.channelId').
 * Renameed columns - 'id': 'category_id', 'snippet.title': 'category_name'
 * Cast category_id to number for merging with csv dataframes
+
 CSV:
 * Added a column to each country's df to define which country info in the final df.
 * Merge category_names from respective .json files into each country's df
